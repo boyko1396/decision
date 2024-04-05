@@ -42,13 +42,16 @@
   }
   &__services {
     &-card {
-      &:not(:last-child) {
-        margin-bottom: var(--rhythm-12);
+      &:not(:first-child) {
+        margin-top: calc(var(--rhythm-12) * .5);
+        padding-top: calc(var(--rhythm-12) * .5);
         @media (max-width: $lg) {
-          margin-bottom: 160rem;
+          margin-top: calc(160rem * .5);
+          padding-top: calc(160rem * .5);
         }
         @media (max-width: $md) {
-          margin-bottom: 140rem;
+          margin-top: calc(140rem * .5);
+          padding-top: calc(140rem * .5);
         }
       }
     }

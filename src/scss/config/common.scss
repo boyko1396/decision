@@ -229,8 +229,12 @@
 
 .u-box {
   backdrop-filter: $blur1;
+  display: block;
   border-radius: $radiusMg;
   position: relative;
+  &:hover {
+    text-decoration: none;
+  }
   &:before,
   &:after {
     width: 100%;
