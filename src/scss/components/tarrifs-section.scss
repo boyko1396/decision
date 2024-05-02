@@ -1,0 +1,139 @@
+.tarrifs-section {
+  padding: var(--rhythm-1) 0;
+  &__container {
+  }
+  &__title {
+    margin: 0 0 var(--rhythm-8);
+    text-transform: uppercase;
+    @media (max-width: $lg) {
+      margin-bottom: 60rem;
+    }
+    @media (max-width: $md) {
+      margin-bottom: 32rem;
+    }
+  }
+  &__row {
+    @media (min-width: $exl-mf) {
+      --gap: 19rem;
+      --gap-: -19rem;
+    }
+  }
+  &__col {
+    &--left {
+      @media (max-width: $lg) {
+        max-width: 57.5%;
+        flex-basis: 57.5%;
+      }
+      @media (max-width: $md) {
+        max-width: 94%;
+        flex-basis: 94%;
+      }
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &--right {
+      @media (max-width: $lg) {
+        max-width: 42.5%;
+        flex-basis: 42.5%;
+      }
+      @media (max-width: $md) {
+        max-width: 67%;
+        flex-basis: 67%;
+      }
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &__aside {
+    position: relative;
+  }
+  &__card {
+    padding: 80rem;
+    @media (max-width: $lg) {
+      padding: 50rem;
+    }
+    @media (max-width: $sm) {
+      padding: 24rem 18rem 24rem 24rem;
+    }
+    &-text {
+      max-width: 436rem;
+      line-height: $lineHeightMd;
+      @media (max-width: $lg) {
+        max-width: 430rem;
+        font-size: 16rem;
+        line-height: $lineHeightLg;
+      }
+    }
+  }
+  &__img {
+    max-width: 284rem;
+    margin: -142rem 0 0 auto;
+    position: relative;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+    @media (max-width: $exl) {
+      max-width: 200rem;
+      margin-top: -92rem;
+    }
+    @media (max-width: $lg) {
+      max-width: 238rem;
+      margin-top: -86rem;
+    }
+    @media (max-width: $md) {
+      max-width: 210rem;
+      margin-top: -96rem;
+      margin-bottom: -102rem;
+    }
+    @media (max-width: $sm) {
+      max-width: 94rem;
+      margin-top: -30rem;
+      margin-bottom: -52rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__card-tarrifs {
+    padding: var(--rhythm-7);
+    text-align: center;
+    @media (max-width: $lg) {
+      padding: 50rem 20rem;
+    }
+    @media (max-width: $sm) {
+      padding: 43rem 15rem;
+    }
+    &:not(:last-child) {
+      margin-bottom: calc(var(--gap) * 2);
+      @media (max-width: $md) {
+        margin-bottom: 12rem;
+      }
+    }
+    &-title {
+      margin: 0 0 var(--rhythm-4);
+      text-transform: uppercase;
+      @media (max-width: $lg) {
+        margin-bottom: 16rem;
+      }
+      @media (max-width: $sm) {
+        margin-bottom: 8rem;
+      }
+    }
+    &-text {
+      line-height: $lineHeightMd;
+      @media (max-width: $lg) {
+        font-size: 16rem;
+        line-height: $lineHeightLg;
+      }
+      @media (max-width: $sm) {
+        font-size: 14rem;
+      }
+    }
+  }
+}

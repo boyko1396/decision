@@ -272,6 +272,11 @@
           background: $gradientAccent1;
         }
       }
+      &-lime {
+        &:after {
+          background: $gradientLime1;
+        }
+      }
     }
   }
   &--hover {
@@ -759,6 +764,18 @@
   &--13 {
     top: 3200rem;
     right: -640rem;
+  }
+  &--14 {
+    top: 1400rem;
+    left: -500rem;
+  }
+  &--15 {
+    top: 2800rem;
+    right: -640rem;
+  }
+  &--16 {
+    top: 3900rem;
+    left: -500rem;
   }
 }
 
@@ -1404,4 +1421,8 @@
       font-size: 14rem;
     }
   }
+}
+
+.h-100 {
+  height: 100%;
 }
